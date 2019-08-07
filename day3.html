@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day3</title>
+</head>
+<body><center>
+    <img src= "images/jidda.jpg" width="70%" height="100%" id="mine">
+</center>
+    <script>
+    
+    var imgg = ["images/color.jpeg","images/click.jpg","images/jidda.jpg","images/kadunalogo.jpg","images/colorful.jpg"]
+    var index = 0;
+    var handleTiming = setInterval(slider, 2000);
+    var mine = document.getElementById("mine");
+    function slider(){
+        mine.setAttribute("src", imgg[index]);
+        index++;
+        if( index > imgg.length -1){
+            index = 0;
+        }
+    }
+    </script>
+</body>
+</html>
